@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div id="wrapper">
+    <h1>JS Dom</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit non fugiat ipsa, nihil inventore repellendus a nulla excepturi quae sequi voluptatibus unde animi blanditiis! Libero maxime ipsa rem deleniti provident!</p>
+    <section>
+        <h3 id="SuperHeros">superhero</h3>
+        
+        <ul>
+        </div>
+        <div id="liWrapper">
+            <li class="good">SUpermen</li>
+            <li class="good">Batman</li>
+            <li class="bad">DarkSide</li>
+        </div>
+        </ul>
+        
+        <li><button onclick="console.log('Hello')">Click</button></li>
+        <input type="text" id="superHero-name">
+        <button id="add-superHeros"onclick= "addSuperhero()">Add</button>
+
+    </section>
+
+<script>
+    // selektirane na vsi4ki elementi s takuv tag s querySelectorALL()
+    let allLi= document.querySelectorAll('li');
+    console.log(allLi);
+    let badHeros =document.querySelectorAll('.bad')
+    console.log(badHeros);
+    // selektirane na purvi element s CSS selektor - querySelector()
+    let firstLi = document.querySelector('li');
+        console.log(firstLi);
+    // selektirane po tagName
+    let liHeros = document.getElementsByTagName('li')
+    console.log(liHeros);
+    // selektirane po klasove
+    let goodHeros = document.getElementsByClassName('good')
+    console.log(goodHeros);
+    //dobavqne na buton koito dobavq geroi
+    function addSuperhero() {
+        console.log('cliked');
+        
+    }
+   // get by id
+    let headingElement = document.getElementById('SuperHeros');
+    headingElement.textContent+='Thebest';
+    console.log(headingElement.textContent);
+
+// vryshta celiq section HTML
+    let superHeroElement = document.getElementById('SuperHeros');
+    console.log(superHeroElement.innerHTML);
+
+    // slagane na backgraund kato se suzdava div wraper
+    let siteWrapper= document.getElementById('wrapper');
+    siteWrapper.style.backgroundColor='aqua'
+    let LiBackGround = document.getElementById('liWrapper')
+    LiBackGround.style.backgroundColor='#c3de87'
+</script>
+
+</body>
+</html>

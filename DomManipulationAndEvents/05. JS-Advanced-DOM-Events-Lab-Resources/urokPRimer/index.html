@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Events</title>
+</head>
+<body>
+    <h1>Super Heros</h1>
+    <ul id="hero-list" >
+        <li>Supermen</li>
+        <li>Batman</li>
+        <li>Thor</li>
+        <li>Thans</li>
+        <li>Groot</li>
+        
+    </ul>
+    <div>
+    <label for="hero-name">Hero Name</label>
+    <input id="hero-name"type="text">
+    <button id="add-hero-button" onclick="addHero();" onmouseover="buttonMouseOverHandler();">Add Hero</button>
+    <script src="./solve.js" ></script>
+</div>
+<div>
+    
+    <button id="delete-last-hero" onclick="deleteHero()">Delete</button>
+</div>
+</body>
+</html>
